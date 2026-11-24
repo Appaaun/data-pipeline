@@ -1,0 +1,112 @@
+# =====================================================================================
+#  Pipeline definition. One entry per source under `sources`.
+#  Secrets: use ${ENV_VAR} (or ${ENV_VAR:-default}); values come from the environment or .env
+#  Validate after every edit:   pipeline validate
+# =====================================================================================
+
+project:
+  data_dir: data                              # landing/ bronze/ silver/ gold/ quarantine/ live here
+  warehouse: data/warehouse/warehouse.duckdb  # run history + gold tables + views over silver
+  gold_sql_dir: sql/gold                      # one .sql file per gold model
+  logs_dir: logs
+  landing_retention_days: 7                   # raw landing copies are transient; bronze keeps history
+
+sources:
+  # ---------------------------------------------------------------------------------
+  # 1) CSV file  -  full load, skipped automatically when the file content is unchanged
+  # ---------------------------------------------------------------------------------
+  - name: pharmacy_stock
+    type: csv
+    description: Daily stock snapshot per product batch (product_id = PROD-nnnn[-Bn])
+    options:
+      path: data/sample/pharmacy_stock.csv
+      encoding: utf-8                         # old Thai exports: cp874
+    load_mode: full
+    primary_key: [product_id]
+    columns:
+      - {source: ProductID,             name: product_id,            type: VARCHAR, nullable: false}
+      - {source: ProductName,           name: product_name,          type: VARCHAR, nullable: false}
+      - {source: Category,              name: category,              type: VARCHAR, nullable: false}
+      - {source: Current_Stock,         name: current_stock,         type: INTEGER}
+      - {source: Reorder_Point,         name: reorder_point,         type: INTEGER}
+      - {source: Unit_Cost_THB,         name: unit_cost_thb,         type: "DECIMAL(12,2)"}
+      - {source: Unit_Price_THB,        name: unit_price_thb,        type: "DECIMAL(12,2)"}
+      - {source: Total_Stock_Value_THB, name: total_stock_value_thb, type: "DECIMAL(14,2)"}
+      - {source: Supplier,              name: supplier,              type: VARCHAR}
+      - {source: Expiry_Date,           name: expiry_date,           type: DATE}
+      - {source: Stock_Status,          name: stock_status,          type: VARCHAR}
+    quality:
+      # row-level: severity error -> row goes to quarantine, severity warn -> row kept but counted
+      # the file mixes product rows (PROD-1001) and batch rows (PROD-1001-B2): one row per batch
+      - {rule: regex,           column: product_id, pattern: '^PROD-[0-9]+(-B[0-9]+)?$'}
+      - {rule: range,           column: current_stock,  min: 0}
+      - {rule: range,           column: unit_price_thb, min: 0}
+      - {rule: accepted_values, column: stock_status, values: [In Stock, Reorder Needed, Critical Low, Out of Stock]}
+      - {rule: expression, name: price_not_below_cost, expr: "unit_price_thb >= unit_cost_thb", severity: warn}
+      - {rule: expression, name: stock_value_matches,  expr: "abs(total_stock_value_thb - current_stock * unit_price_thb) < 1", severity: warn}
+      # dataset-level: severity error -> the whole silver publish is aborted
+      - {rule: min_rows, value: 1}
+      - {rule: max_quarantine_ratio, value: 0.05}
+
+  # ---------------------------------------------------------------------------------
+  # 2) Database  -  incremental by watermark (updated_at). Swap the url for Postgres/MySQL:
+  #    url: ${SHOP_DB_URL}      e.g. postgresql+psycopg://user:pass@host:5432/shop
+  # ---------------------------------------------------------------------------------
+  - name: shop_orders
+    type: database
+    description: Sales orders from the shop database
+    options:
+      url: sqlite:///data/sample/shop.db
+      table: orders                           # or: query: "SELECT ... WHERE updated_at > :watermark"
+      chunk_size: 10000
+    load_mode: incremental
+    incremental:
+      column: updated_at
+      initial_value: "1970-01-01 00:00:00"
+    primary_key: [order_id]
+    columns:
+      - {name: order_id,    type: BIGINT, nullable: false}
+      - {name: product_id,  type: VARCHAR, nullable: false}
+      - {name: customer_id, type: VARCHAR}
+      - {name: quantity,    type: INTEGER, nullable: false}
+      - {name: unit_price,  type: "DECIMAL(12,2)", nullable: false}
+      - {name: status,      type: VARCHAR, nullable: false}
+      - {name: channel,     type: VARCHAR}
+      - {name: ordered_at,  type: TIMESTAMP, nullable: false}
+      - {name: updated_at,  type: TIMESTAMP, nullable: false}
+    quality:
+      - {rule: range, column: quantity, min: 1, max: 10000}
+      - {rule: range, column: unit_price, min: 0}
+      - {rule: accepted_values, column: status, values: [pending, shipped, completed, cancelled]}
+      - {rule: expression, name: updated_after_ordered, expr: "updated_at >= ordered_at", severity: warn}
+      - {rule: max_quarantine_ratio, value: 0.05}
+      - {rule: freshness, column: updated_at, max_age_days: 3, severity: warn}
+
+  # ---------------------------------------------------------------------------------
+  # 3) REST API  -  needs `pipeline mock-api` running for the demo
+  # ---------------------------------------------------------------------------------
+  - name: stock_movements
+    type: api
+    description: Stock in/out/adjust events
+    options:
+      url: ${MOCK_API_URL:-http://127.0.0.1:8000}/api/stock_movements
+      auth: {type: bearer, token: "${DEMO_API_TOKEN}"}
+      records_path: data.items                # where the list lives in the JSON response
+      pagination: {type: page, page_param: page, size_param: page_size, page_size: 100}
+      timeout: 30
+      retries: 5
+    load_mode: incremental
+    incremental: {param: since, column: updated_at, initial_value: "1970-01-01T00:00:00"}
+    primary_key: [movement_id]
+    columns:
+      - {name: movement_id,   type: BIGINT, nullable: false}
+      - {name: product_id,    type: VARCHAR, nullable: false}
+      - {name: movement_type, type: VARCHAR, nullable: false}
+      - {name: quantity,      type: INTEGER}
+      - {source: warehouse_code, name: warehouse, type: VARCHAR}   # nested {"warehouse": {"code": ..}} is flattened
+      - {name: moved_at,      type: TIMESTAMP, nullable: false}
+      - {name: updated_at,    type: TIMESTAMP, nullable: false}
+    quality:
+      - {rule: accepted_values, column: movement_type, values: [IN, OUT, ADJUST]}
+      - {rule: not_null, column: quantity, severity: warn}
+      - {rule: max_quarantine_ratio, value: 0.05}

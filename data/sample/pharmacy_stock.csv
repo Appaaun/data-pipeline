@@ -1,0 +1,157 @@
+ProductID,ProductName,Category,Current_Stock,Reorder_Point,Unit_Cost_THB,Unit_Price_THB,Total_Stock_Value_THB,Supplier,Expiry_Date,Stock_Status
+PROD-1001,Vitamin C 1000mg (Standard),Vitamins,315,43,252.8,360.0,113400.0,BioHealth Pharma Thailand,2026-11-22,In Stock
+PROD-1002,Vitamin C 1000mg (Family Pack),Vitamins,414,62,311.22,410.0,169740.0,BioHealth Pharma Thailand,2029-07-17,In Stock
+PROD-1003,Vitamin C 1000mg (Value Size),Vitamins,3,26,355.82,520.0,1560.0,BioHealth Pharma Thailand,2027-05-03,Critical Low
+PROD-1004,Multivitamin A-Z (Standard),Vitamins,347,51,213.4,310.0,107570.0,BioHealth Pharma Thailand,2027-05-18,In Stock
+PROD-1005,Multivitamin A-Z (Family Pack),Vitamins,198,21,313.02,480.0,95040.0,BioHealth Pharma Thailand,2029-08-06,In Stock
+PROD-1006,Multivitamin A-Z (Value Size),Vitamins,305,62,165.25,230.0,70150.0,BioHealth Pharma Thailand,2027-11-06,In Stock
+PROD-1007,Fish Oil 1000mg (Standard),Vitamins,282,68,183.77,250.0,70500.0,BioHealth Pharma Thailand,2026-12-30,In Stock
+PROD-1008,Fish Oil 1000mg (Family Pack),Vitamins,315,73,300.79,450.0,141750.0,BioHealth Pharma Thailand,2026-07-31,In Stock
+PROD-1009,Fish Oil 1000mg (Value Size),Vitamins,95,29,244.53,330.0,31350.0,BioHealth Pharma Thailand,2027-09-18,In Stock
+PROD-1010,Vitamin D3 (Standard),Vitamins,360,73,385.77,540.0,194400.0,BioHealth Pharma Thailand,2028-01-06,In Stock
+PROD-1011,Vitamin D3 (Family Pack),Vitamins,236,41,212.77,320.0,75520.0,BioHealth Pharma Thailand,2027-01-02,In Stock
+PROD-1012,Vitamin D3 (Value Size),Vitamins,40,35,362.36,480.0,19200.0,BioHealth Pharma Thailand,2026-12-10,In Stock
+PROD-1013,Coenzyme Q10 (Standard),Vitamins,11,59,195.86,290.0,3190.0,BioHealth Pharma Thailand,2029-07-02,Critical Low
+PROD-1014,Coenzyme Q10 (Family Pack),Vitamins,351,76,266.33,350.0,122850.0,BioHealth Pharma Thailand,2028-08-27,In Stock
+PROD-1015,Coenzyme Q10 (Value Size),Vitamins,434,79,270.68,420.0,182280.0,BioHealth Pharma Thailand,2029-01-09,In Stock
+PROD-1016,Zinc Plus (Standard),Vitamins,193,48,308.35,480.0,92640.0,BioHealth Pharma Thailand,2027-12-10,In Stock
+PROD-1017,Zinc Plus (Family Pack),Vitamins,124,58,372.6,550.0,68200.0,BioHealth Pharma Thailand,2027-04-07,In Stock
+PROD-1018,Zinc Plus (Value Size),Vitamins,356,37,240.69,350.0,124600.0,BioHealth Pharma Thailand,2028-05-05,In Stock
+PROD-1019,Premium Whey Protein (Standard),Supplements,35,64,1133.81,1450.0,50750.0,NutriMax Global Supply,2029-05-12,Reorder Needed
+PROD-1020,Premium Whey Protein (Family Pack),Supplements,355,75,820.38,1100.0,390500.0,NutriMax Global Supply,2028-06-29,In Stock
+PROD-1021,Premium Whey Protein (Value Size),Supplements,147,37,646.31,880.0,129360.0,NutriMax Global Supply,2027-04-21,In Stock
+PROD-1022,Plant Protein Blend (Standard),Supplements,122,35,636.66,760.0,92720.0,NutriMax Global Supply,2028-05-30,In Stock
+PROD-1023,Plant Protein Blend (Family Pack),Supplements,242,33,1139.43,1440.0,348480.0,NutriMax Global Supply,2028-06-10,In Stock
+PROD-1024,Plant Protein Blend (Value Size),Supplements,86,33,947.7,1310.0,112660.0,NutriMax Global Supply,2027-05-14,In Stock
+PROD-1025,Melatonin 5mg (Standard),Supplements,43,36,674.18,830.0,35690.0,NutriMax Global Supply,2028-05-12,In Stock
+PROD-1026,Melatonin 5mg (Family Pack),Supplements,260,64,768.54,1000.0,260000.0,NutriMax Global Supply,2027-07-08,In Stock
+PROD-1027,Melatonin 5mg (Value Size),Supplements,205,34,915.92,1150.0,235750.0,NutriMax Global Supply,2026-08-13,In Stock
+PROD-1028,Collagen Peptide (Standard),Supplements,272,47,400.02,540.0,146880.0,NutriMax Global Supply,2026-09-22,In Stock
+PROD-1029,Collagen Peptide (Family Pack),Supplements,287,59,518.57,630.0,180810.0,NutriMax Global Supply,2027-03-09,In Stock
+PROD-1030,Collagen Peptide (Value Size),Supplements,284,25,1058.89,1460.0,414640.0,NutriMax Global Supply,2028-10-15,In Stock
+PROD-1031,BCAA Powder (Standard),Supplements,246,20,710.98,890.0,218940.0,NutriMax Global Supply,2029-01-26,In Stock
+PROD-1032,BCAA Powder (Family Pack),Supplements,53,43,477.32,590.0,31270.0,NutriMax Global Supply,2026-08-24,In Stock
+PROD-1033,BCAA Powder (Value Size),Supplements,45,22,1098.89,1540.0,69300.0,NutriMax Global Supply,2027-01-10,In Stock
+PROD-1034,Paracetamol 500mg (Standard),OTC Medicine,128,36,32.4,50.0,6400.0,Siam Medical Group,2028-06-06,In Stock
+PROD-1035,Paracetamol 500mg (Family Pack),OTC Medicine,28,67,57.08,100.0,2800.0,Siam Medical Group,2029-02-02,Reorder Needed
+PROD-1036,Paracetamol 500mg (Value Size),OTC Medicine,196,46,35.53,70.0,13720.0,Siam Medical Group,2027-01-29,In Stock
+PROD-1037,Ibuprofen 400mg (Standard),OTC Medicine,259,70,59.04,110.0,28490.0,Siam Medical Group,2029-07-31,In Stock
+PROD-1038,Ibuprofen 400mg (Family Pack),OTC Medicine,396,79,16.48,30.0,11880.0,Siam Medical Group,2029-07-15,In Stock
+PROD-1039,Ibuprofen 400mg (Value Size),OTC Medicine,364,41,31.53,50.0,18200.0,Siam Medical Group,2029-06-02,In Stock
+PROD-1040,Antihistamine (Standard),OTC Medicine,297,45,23.74,40.0,11880.0,Siam Medical Group,2028-03-19,In Stock
+PROD-1041,Antihistamine (Family Pack),OTC Medicine,411,28,43.49,80.0,32880.0,Siam Medical Group,2029-05-10,In Stock
+PROD-1042,Antihistamine (Value Size),OTC Medicine,434,31,55.63,110.0,47740.0,Siam Medical Group,2027-09-13,In Stock
+PROD-1043,Cough Syrup (Standard),OTC Medicine,410,30,26.36,50.0,20500.0,Siam Medical Group,2028-09-14,In Stock
+PROD-1044,Cough Syrup (Family Pack),OTC Medicine,389,65,46.62,70.0,27230.0,Siam Medical Group,2028-07-12,In Stock
+PROD-1045,Cough Syrup (Value Size),OTC Medicine,354,59,55.71,80.0,28320.0,Siam Medical Group,2027-05-25,In Stock
+PROD-1046,Antacid Tablets (Standard),OTC Medicine,375,26,50.82,90.0,33750.0,Siam Medical Group,2027-03-25,In Stock
+PROD-1047,Antacid Tablets (Family Pack),OTC Medicine,395,45,73.54,150.0,59250.0,Siam Medical Group,2028-04-13,In Stock
+PROD-1048,Antacid Tablets (Value Size),OTC Medicine,45,72,35.1,70.0,3150.0,Siam Medical Group,2028-02-21,Reorder Needed
+PROD-1049,Alcohol Gel 450ml (Standard),Medical Supplies,380,73,465.85,700.0,266000.0,MedTech Solutions Corp,2026-10-25,In Stock
+PROD-1050,Alcohol Gel 450ml (Family Pack),Medical Supplies,304,26,354.05,490.0,148960.0,MedTech Solutions Corp,2027-07-02,In Stock
+PROD-1051,Alcohol Gel 450ml (Value Size),Medical Supplies,214,64,188.26,260.0,55640.0,MedTech Solutions Corp,2028-08-30,In Stock
+PROD-1052,Surgical Mask 50pcs (Standard),Medical Supplies,312,45,193.09,270.0,84240.0,MedTech Solutions Corp,2029-01-07,In Stock
+PROD-1053,Surgical Mask 50pcs (Family Pack),Medical Supplies,163,33,77.92,110.0,17930.0,MedTech Solutions Corp,2027-05-31,In Stock
+PROD-1054,Surgical Mask 50pcs (Value Size),Medical Supplies,207,65,77.5,110.0,22770.0,MedTech Solutions Corp,2027-11-13,In Stock
+PROD-1055,Digital Thermometer (Standard),Medical Supplies,216,70,230.32,300.0,64800.0,MedTech Solutions Corp,2027-06-24,In Stock
+PROD-1056,Digital Thermometer (Family Pack),Medical Supplies,63,73,224.27,320.0,20160.0,MedTech Solutions Corp,2027-03-02,Reorder Needed
+PROD-1057,Digital Thermometer (Value Size),Medical Supplies,216,61,228.63,320.0,69120.0,MedTech Solutions Corp,2029-04-05,In Stock
+PROD-1058,Knee Support Sleeve (Standard),Medical Supplies,390,67,118.14,160.0,62400.0,MedTech Solutions Corp,2027-07-17,In Stock
+PROD-1059,Knee Support Sleeve (Family Pack),Medical Supplies,160,20,100.04,150.0,24000.0,MedTech Solutions Corp,2029-02-04,In Stock
+PROD-1060,Knee Support Sleeve (Value Size),Medical Supplies,131,62,354.03,460.0,60260.0,MedTech Solutions Corp,2027-11-15,In Stock
+PROD-1061,First Aid Kit (Standard),Medical Supplies,177,28,76.35,110.0,19470.0,MedTech Solutions Corp,2027-01-06,In Stock
+PROD-1062,First Aid Kit (Family Pack),Medical Supplies,291,69,309.64,420.0,122220.0,MedTech Solutions Corp,2028-07-26,In Stock
+PROD-1063,First Aid Kit (Value Size),Medical Supplies,333,76,85.68,120.0,39960.0,MedTech Solutions Corp,2027-11-21,In Stock
+PROD-1064,Organic Rice Box (500g),Healthy Food,250,78,163.03,260.0,65000.0,GreenEarth Organic Farms,2029-05-21,In Stock
+PROD-1065,Organic Rice Box (1kg),Healthy Food,303,65,123.4,180.0,54540.0,GreenEarth Organic Farms,2029-05-29,In Stock
+PROD-1066,Organic Rice Box (2kg),Healthy Food,277,30,110.35,160.0,44320.0,GreenEarth Organic Farms,2029-06-25,In Stock
+PROD-1067,Quinoa Grain Bag (500g),Healthy Food,17,45,128.21,220.0,3740.0,GreenEarth Organic Farms,2028-05-24,Critical Low
+PROD-1068,Quinoa Grain Bag (1kg),Healthy Food,382,77,67.33,110.0,42020.0,GreenEarth Organic Farms,2028-02-20,In Stock
+PROD-1069,Quinoa Grain Bag (2kg),Healthy Food,43,27,85.6,130.0,5590.0,GreenEarth Organic Farms,2028-02-19,In Stock
+PROD-1070,Almond Milk Unsweetened (500g),Healthy Food,253,56,105.73,170.0,43010.0,GreenEarth Organic Farms,2026-08-03,In Stock
+PROD-1071,Almond Milk Unsweetened (1kg),Healthy Food,349,46,60.88,100.0,34900.0,GreenEarth Organic Farms,2028-12-22,In Stock
+PROD-1072,Almond Milk Unsweetened (2kg),Healthy Food,28,52,162.34,230.0,6440.0,GreenEarth Organic Farms,2028-07-17,Reorder Needed
+PROD-1073,Chia Seeds Pack (500g),Healthy Food,179,58,58.51,90.0,16110.0,GreenEarth Organic Farms,2026-12-20,In Stock
+PROD-1074,Chia Seeds Pack (1kg),Healthy Food,170,37,47.64,80.0,13600.0,GreenEarth Organic Farms,2027-08-27,In Stock
+PROD-1075,Chia Seeds Pack (2kg),Healthy Food,442,50,70.29,110.0,48620.0,GreenEarth Organic Farms,2027-07-14,In Stock
+PROD-1076,Honey Organic (500g),Healthy Food,195,68,101.76,150.0,29250.0,GreenEarth Organic Farms,2029-07-27,In Stock
+PROD-1077,Honey Organic (1kg),Healthy Food,171,25,151.97,250.0,42750.0,GreenEarth Organic Farms,2029-05-15,In Stock
+PROD-1078,Honey Organic (2kg),Healthy Food,250,35,102.35,140.0,35000.0,GreenEarth Organic Farms,2027-02-10,In Stock
+PROD-1001-B2,Vitamin C 1000mg (Standard),Vitamins,183,43,252.8,360.0,65880.0,BioHealth Pharma Thailand,2028-02-24,In Stock
+PROD-1002-B2,Vitamin C 1000mg (Family Pack),Vitamins,13,62,311.22,410.0,5330.0,BioHealth Pharma Thailand,2029-07-29,Critical Low
+PROD-1003-B2,Vitamin C 1000mg (Value Size),Vitamins,177,26,355.82,520.0,92040.0,BioHealth Pharma Thailand,2028-02-07,In Stock
+PROD-1004-B2,Multivitamin A-Z (Standard),Vitamins,46,51,213.4,310.0,14260.0,BioHealth Pharma Thailand,2029-11-29,Reorder Needed
+PROD-1005-B2,Multivitamin A-Z (Family Pack),Vitamins,191,21,313.02,480.0,91680.0,BioHealth Pharma Thailand,2030-06-15,In Stock
+PROD-1006-B2,Multivitamin A-Z (Value Size),Vitamins,43,62,165.25,230.0,9890.0,BioHealth Pharma Thailand,2029-05-26,Reorder Needed
+PROD-1007-B2,Fish Oil 1000mg (Standard),Vitamins,19,68,183.77,250.0,4750.0,BioHealth Pharma Thailand,2029-06-30,Critical Low
+PROD-1008-B2,Fish Oil 1000mg (Family Pack),Vitamins,127,73,300.79,450.0,57150.0,BioHealth Pharma Thailand,2029-02-03,In Stock
+PROD-1009-B2,Fish Oil 1000mg (Value Size),Vitamins,96,29,244.53,330.0,31680.0,BioHealth Pharma Thailand,2027-01-16,In Stock
+PROD-1010-B2,Vitamin D3 (Standard),Vitamins,39,73,385.77,540.0,21060.0,BioHealth Pharma Thailand,2028-09-01,Reorder Needed
+PROD-1011-B2,Vitamin D3 (Family Pack),Vitamins,42,41,212.77,320.0,13440.0,BioHealth Pharma Thailand,2028-07-29,In Stock
+PROD-1012-B2,Vitamin D3 (Value Size),Vitamins,97,35,362.36,480.0,46560.0,BioHealth Pharma Thailand,2030-03-03,In Stock
+PROD-1013-B2,Coenzyme Q10 (Standard),Vitamins,71,59,195.86,290.0,20590.0,BioHealth Pharma Thailand,2029-06-09,In Stock
+PROD-1014-B2,Coenzyme Q10 (Family Pack),Vitamins,12,76,266.33,350.0,4200.0,BioHealth Pharma Thailand,2027-04-19,Critical Low
+PROD-1015-B2,Coenzyme Q10 (Value Size),Vitamins,88,79,270.68,420.0,36960.0,BioHealth Pharma Thailand,2027-06-11,In Stock
+PROD-1016-B2,Zinc Plus (Standard),Vitamins,136,48,308.35,480.0,65280.0,BioHealth Pharma Thailand,2028-08-06,In Stock
+PROD-1017-B2,Zinc Plus (Family Pack),Vitamins,199,58,372.6,550.0,109450.0,BioHealth Pharma Thailand,2028-06-27,In Stock
+PROD-1018-B2,Zinc Plus (Value Size),Vitamins,140,37,240.69,350.0,49000.0,BioHealth Pharma Thailand,2029-10-23,In Stock
+PROD-1019-B2,Premium Whey Protein (Standard),Supplements,81,64,1133.81,1450.0,117450.0,NutriMax Global Supply,2030-04-20,In Stock
+PROD-1020-B2,Premium Whey Protein (Family Pack),Supplements,13,75,820.38,1100.0,14300.0,NutriMax Global Supply,2027-11-17,Critical Low
+PROD-1021-B2,Premium Whey Protein (Value Size),Supplements,81,37,646.31,880.0,71280.0,NutriMax Global Supply,2029-09-30,In Stock
+PROD-1022-B2,Plant Protein Blend (Standard),Supplements,75,35,636.66,760.0,57000.0,NutriMax Global Supply,2027-01-02,In Stock
+PROD-1023-B2,Plant Protein Blend (Family Pack),Supplements,75,33,1139.43,1440.0,108000.0,NutriMax Global Supply,2027-08-01,In Stock
+PROD-1024-B2,Plant Protein Blend (Value Size),Supplements,173,33,947.7,1310.0,226630.0,NutriMax Global Supply,2027-04-10,In Stock
+PROD-1025-B2,Melatonin 5mg (Standard),Supplements,176,36,674.18,830.0,146080.0,NutriMax Global Supply,2026-12-19,In Stock
+PROD-1026-B2,Melatonin 5mg (Family Pack),Supplements,14,64,768.54,1000.0,14000.0,NutriMax Global Supply,2030-05-03,Critical Low
+PROD-1027-B2,Melatonin 5mg (Value Size),Supplements,114,34,915.92,1150.0,131100.0,NutriMax Global Supply,2029-07-27,In Stock
+PROD-1028-B2,Collagen Peptide (Standard),Supplements,117,47,400.02,540.0,63180.0,NutriMax Global Supply,2027-10-20,In Stock
+PROD-1029-B2,Collagen Peptide (Family Pack),Supplements,16,59,518.57,630.0,10080.0,NutriMax Global Supply,2029-07-12,Critical Low
+PROD-1030-B2,Collagen Peptide (Value Size),Supplements,168,25,1058.89,1460.0,245280.0,NutriMax Global Supply,2029-05-25,In Stock
+PROD-1031-B2,BCAA Powder (Standard),Supplements,27,20,710.98,890.0,24030.0,NutriMax Global Supply,2027-06-07,In Stock
+PROD-1032-B2,BCAA Powder (Family Pack),Supplements,138,43,477.32,590.0,81420.0,NutriMax Global Supply,2029-08-09,In Stock
+PROD-1033-B2,BCAA Powder (Value Size),Supplements,175,22,1098.89,1540.0,269500.0,NutriMax Global Supply,2029-11-01,In Stock
+PROD-1034-B2,Paracetamol 500mg (Standard),OTC Medicine,22,36,32.4,50.0,1100.0,Siam Medical Group,2030-04-15,Reorder Needed
+PROD-1035-B2,Paracetamol 500mg (Family Pack),OTC Medicine,145,67,57.08,100.0,14500.0,Siam Medical Group,2028-10-06,In Stock
+PROD-1036-B2,Paracetamol 500mg (Value Size),OTC Medicine,63,46,35.53,70.0,4410.0,Siam Medical Group,2030-01-07,In Stock
+PROD-1037-B2,Ibuprofen 400mg (Standard),OTC Medicine,183,70,59.04,110.0,20130.0,Siam Medical Group,2029-12-02,In Stock
+PROD-1038-B2,Ibuprofen 400mg (Family Pack),OTC Medicine,159,79,16.48,30.0,4770.0,Siam Medical Group,2027-04-08,In Stock
+PROD-1039-B2,Ibuprofen 400mg (Value Size),OTC Medicine,141,41,31.53,50.0,7050.0,Siam Medical Group,2027-08-07,In Stock
+PROD-1040-B2,Antihistamine (Standard),OTC Medicine,72,45,23.74,40.0,2880.0,Siam Medical Group,2029-03-11,In Stock
+PROD-1041-B2,Antihistamine (Family Pack),OTC Medicine,71,28,43.49,80.0,5680.0,Siam Medical Group,2029-06-27,In Stock
+PROD-1042-B2,Antihistamine (Value Size),OTC Medicine,140,31,55.63,110.0,15400.0,Siam Medical Group,2028-08-15,In Stock
+PROD-1043-B2,Cough Syrup (Standard),OTC Medicine,177,30,26.36,50.0,8850.0,Siam Medical Group,2030-07-03,In Stock
+PROD-1044-B2,Cough Syrup (Family Pack),OTC Medicine,29,65,46.62,70.0,2030.0,Siam Medical Group,2027-05-15,Reorder Needed
+PROD-1045-B2,Cough Syrup (Value Size),OTC Medicine,122,59,55.71,80.0,9760.0,Siam Medical Group,2029-04-16,In Stock
+PROD-1046-B2,Antacid Tablets (Standard),OTC Medicine,115,26,50.82,90.0,10350.0,Siam Medical Group,2029-04-16,In Stock
+PROD-1047-B2,Antacid Tablets (Family Pack),OTC Medicine,70,45,73.54,150.0,10500.0,Siam Medical Group,2029-03-10,In Stock
+PROD-1048-B2,Antacid Tablets (Value Size),OTC Medicine,118,72,35.1,70.0,8260.0,Siam Medical Group,2027-06-11,In Stock
+PROD-1049-B2,Alcohol Gel 450ml (Standard),Medical Supplies,67,73,465.85,700.0,46900.0,MedTech Solutions Corp,2028-07-28,Reorder Needed
+PROD-1050-B2,Alcohol Gel 450ml (Family Pack),Medical Supplies,118,26,354.05,490.0,57820.0,MedTech Solutions Corp,2030-01-26,In Stock
+PROD-1051-B2,Alcohol Gel 450ml (Value Size),Medical Supplies,187,64,188.26,260.0,48620.0,MedTech Solutions Corp,2030-03-03,In Stock
+PROD-1052-B2,Surgical Mask 50pcs (Standard),Medical Supplies,39,45,193.09,270.0,10530.0,MedTech Solutions Corp,2029-09-12,Reorder Needed
+PROD-1053-B2,Surgical Mask 50pcs (Family Pack),Medical Supplies,57,33,77.92,110.0,6270.0,MedTech Solutions Corp,2028-06-08,In Stock
+PROD-1054-B2,Surgical Mask 50pcs (Value Size),Medical Supplies,18,65,77.5,110.0,1980.0,MedTech Solutions Corp,2027-12-27,Critical Low
+PROD-1055-B2,Digital Thermometer (Standard),Medical Supplies,49,70,230.32,300.0,14700.0,MedTech Solutions Corp,2027-08-08,Reorder Needed
+PROD-1056-B2,Digital Thermometer (Family Pack),Medical Supplies,197,73,224.27,320.0,63040.0,MedTech Solutions Corp,2028-07-03,In Stock
+PROD-1057-B2,Digital Thermometer (Value Size),Medical Supplies,175,61,228.63,320.0,56000.0,MedTech Solutions Corp,2029-05-23,In Stock
+PROD-1058-B2,Knee Support Sleeve (Standard),Medical Supplies,155,67,118.14,160.0,24800.0,MedTech Solutions Corp,2030-07-09,In Stock
+PROD-1059-B2,Knee Support Sleeve (Family Pack),Medical Supplies,86,20,100.04,150.0,12900.0,MedTech Solutions Corp,2027-03-04,In Stock
+PROD-1060-B2,Knee Support Sleeve (Value Size),Medical Supplies,187,62,354.03,460.0,86020.0,MedTech Solutions Corp,2028-11-16,In Stock
+PROD-1061-B2,First Aid Kit (Standard),Medical Supplies,37,28,76.35,110.0,4070.0,MedTech Solutions Corp,2029-06-20,In Stock
+PROD-1062-B2,First Aid Kit (Family Pack),Medical Supplies,32,69,309.64,420.0,13440.0,MedTech Solutions Corp,2029-05-27,Reorder Needed
+PROD-1063-B2,First Aid Kit (Value Size),Medical Supplies,184,76,85.68,120.0,22080.0,MedTech Solutions Corp,2027-08-28,In Stock
+PROD-1064-B2,Organic Rice Box (500g),Healthy Food,130,78,163.03,260.0,33800.0,GreenEarth Organic Farms,2030-04-02,In Stock
+PROD-1065-B2,Organic Rice Box (1kg),Healthy Food,41,65,123.4,180.0,7380.0,GreenEarth Organic Farms,2028-02-01,Reorder Needed
+PROD-1066-B2,Organic Rice Box (2kg),Healthy Food,103,30,110.35,160.0,16480.0,GreenEarth Organic Farms,2027-04-24,In Stock
+PROD-1067-B2,Quinoa Grain Bag (500g),Healthy Food,172,45,128.21,220.0,37840.0,GreenEarth Organic Farms,2028-08-01,In Stock
+PROD-1068-B2,Quinoa Grain Bag (1kg),Healthy Food,42,77,67.33,110.0,4620.0,GreenEarth Organic Farms,2029-10-03,Reorder Needed
+PROD-1069-B2,Quinoa Grain Bag (2kg),Healthy Food,58,27,85.6,130.0,7540.0,GreenEarth Organic Farms,2028-10-10,In Stock
+PROD-1070-B2,Almond Milk Unsweetened (500g),Healthy Food,20,56,105.73,170.0,3400.0,GreenEarth Organic Farms,2028-06-10,Critical Low
+PROD-1071-B2,Almond Milk Unsweetened (1kg),Healthy Food,167,46,60.88,100.0,16700.0,GreenEarth Organic Farms,2028-03-06,In Stock
+PROD-1072-B2,Almond Milk Unsweetened (2kg),Healthy Food,177,52,162.34,230.0,40710.0,GreenEarth Organic Farms,2029-04-06,In Stock
+PROD-1073-B2,Chia Seeds Pack (500g),Healthy Food,187,58,58.51,90.0,16830.0,GreenEarth Organic Farms,2027-07-20,In Stock
+PROD-1074-B2,Chia Seeds Pack (1kg),Healthy Food,89,37,47.64,80.0,7120.0,GreenEarth Organic Farms,2029-02-19,In Stock
+PROD-1075-B2,Chia Seeds Pack (2kg),Healthy Food,89,50,70.29,110.0,9790.0,GreenEarth Organic Farms,2027-02-21,In Stock
+PROD-1076-B2,Honey Organic (500g),Healthy Food,138,68,101.76,150.0,20700.0,GreenEarth Organic Farms,2028-10-11,In Stock
+PROD-1077-B2,Honey Organic (1kg),Healthy Food,119,25,151.97,250.0,29750.0,GreenEarth Organic Farms,2027-02-20,In Stock
+PROD-1078-B2,Honey Organic (2kg),Healthy Food,91,35,102.35,140.0,12740.0,GreenEarth Organic Farms,2029-07-14,In Stock
